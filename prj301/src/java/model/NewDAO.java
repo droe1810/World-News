@@ -178,4 +178,16 @@ public class NewDAO extends MyDAO {
         }
     }
 
+    public void delete(String xId) {
+        xSql = "delete from New where id= ?";
+        try {
+            ps = con.prepareStatement(xSql);
+            ps.setString(1, xId);
+            ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 }
