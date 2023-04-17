@@ -162,4 +162,20 @@ public class NewDAO extends MyDAO {
         }
     }
 
+    public void edit(String name, String image, String title, String content, int id) {
+        xSql = "update New set name=?, image=?, title=?, content=? where id=?";
+        try {
+            ps = con.prepareStatement(xSql);
+            ps.setString(1, name);
+            ps.setString(2, image);
+            ps.setString(3, title);
+            ps.setString(4, content);
+            ps.setInt(5, id);
+            ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 }
