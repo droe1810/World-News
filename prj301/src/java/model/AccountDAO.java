@@ -1,0 +1,95 @@
+package model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class AccountDAO extends MyDAO {
+
+    public Account login(String user, String pass) {
+        xSql = "select * from Account where [user] = ? and pass = ?";
+        String xUser, xPass;
+        int xId, xIsWriter, xIsAdmin;
+        Account x = null;
+        try {
+            ps = con.prepareStatement(xSql);
+            ps.setString(1, user);
+            ps.setString(2, pass);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                xUser = rs.getString("user");
+                xPass = rs.getString("pass");
+                xId = rs.getInt("person_id");
+                xIsWriter = rs.getInt("isWriter");
+                xIsAdmin = rs.getInt("isAdmin");
+                x = new Account(xId, user, pass, xIsWriter, xIsAdmin);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return x;
+
+    }
+
+    public List<Account> getAllWriter() {
+        List<Account> list = new ArrayList<>();
+        xSql = "select * from Account where isAdmin = 0";
+        try {
+            String xUser, xPass;
+            int xId, xIsWriter, xIsAdmin;
+            Account x = null;
+            ps = con.prepareStatement(xSql);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                xUser = rs.getString("user");
+                xPass = rs.getString("pass");
+                xId = rs.getInt("person_id");
+                xIsWriter = rs.getInt("isWriter");
+                xIsAdmin = rs.getInt("isAdmin");
+                x = new Account(xId, xUser, xPass, xIsWriter, xIsAdmin);
+                list.add(x);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
+
+    public Account getAccountByID(String id) {
+        xSql = "select * from Account where id = ?";
+        String xName, xImage, xDescription;
+        String xUser, xPass;
+        int xId, xIsWriter, xIsAdmin;
+        Account x = null;
+        try {
+            ps = con.prepareStatement(xSql);
+            ps.setString(1, id);
+            rs = ps.executeQuery();
+            if (rs.next()) {
+                xUser = rs.getString("user");
+                xPass = rs.getString("pass");
+                xId = rs.getInt("person_id");
+                xIsWriter = rs.getInt("isWriter");
+                xIsAdmin = rs.getInt("isAdmin");
+                x = new Account(xId, xUser, xPass, xIsWriter, xIsAdmin);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return x;
+    }
+
+    public void add(String user, String pass) {
+        xSql = "insert into Account ([user],pass,isWriter,isAdmin) values (?,?,1,0)";
+        try {
+            ps = con.prepareStatement(xSql);
+            ps.setString(1, user);
+            ps.setString(2, pass);
+            ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    
+}
