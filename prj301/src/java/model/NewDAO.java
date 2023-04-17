@@ -61,8 +61,8 @@ public class NewDAO extends MyDAO {
         }
         return list;
     }
-    
-        public New getNewByID(String id) {
+
+    public New getNewByID(String id) {
         xSql = "select * from new where id = ?";
         String xName, xImage, xContent;
         int xId;
@@ -87,4 +87,33 @@ public class NewDAO extends MyDAO {
         }
         return x;
     }
+
+    public List<New> getNewByWriterID(int id) {
+        List<New> list = new ArrayList<>();
+        xSql = "select * from new where writerID = ?";
+        try {
+            String xName, xImage, xContent;
+            String xTitle;
+            int xId;
+            Date xDate;
+            New x;
+            ps = con.prepareStatement(xSql);
+            ps.setInt(1, id);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                xId = rs.getInt("id");
+                xName = rs.getString("name");
+                xImage = rs.getString("image");
+                xTitle = rs.getString("title");
+                xContent = rs.getString("content");
+                xDate = rs.getDate("date");
+                x = new New(xId, xName, xImage, xTitle, xContent, xDate);
+                list.add(x);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
+
 }
