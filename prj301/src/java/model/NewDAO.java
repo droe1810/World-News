@@ -61,4 +61,30 @@ public class NewDAO extends MyDAO {
         }
         return list;
     }
+    
+        public New getNewByID(String id) {
+        xSql = "select * from new where id = ?";
+        String xName, xImage, xContent;
+        int xId;
+        Date xDate;
+        String xTitle;
+        New x = null;
+        try {
+            ps = con.prepareStatement(xSql);
+            ps.setString(1, id);
+            rs = ps.executeQuery();
+            if (rs.next()) {
+                xId = Integer.parseInt(id);
+                xName = rs.getString("name");
+                xImage = rs.getString("image");
+                xTitle = rs.getString("title");
+                xContent = rs.getString("content");
+                xDate = rs.getDate("date");
+                x = new New(xId, xName, xImage, xTitle, xContent, xDate);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return x;
+    }
 }
