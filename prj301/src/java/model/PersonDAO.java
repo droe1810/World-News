@@ -52,6 +52,30 @@ public class PersonDAO extends MyDAO {
             }
         } catch (Exception e) {
             e.printStackTrace();
+        }
+        return x;
+    }
+    
+        public Person getPersonByID(int id) {
+        xSql = "select * from person where id = ?";
+        int xId;
+        String xName;
+        Date xDob;
+        String xAddress;
+        Person x = null;
+        try {
+            ps = con.prepareStatement(xSql);
+            ps.setInt(1, id);
+            rs = ps.executeQuery();
+            if (rs.next()) {
+                xId = id;
+                xName = rs.getString("name");
+                xDob = rs.getDate("dob");
+                xAddress = rs.getString("address");
+                x = new Person(id, xName, xDob, xAddress);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
 
         }
         return x;
