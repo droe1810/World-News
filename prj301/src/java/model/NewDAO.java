@@ -116,4 +116,33 @@ public class NewDAO extends MyDAO {
         return list;
     }
 
+    public List<New> searchByName(String txtSearch) {
+        List<New> list = new ArrayList<>();
+        xSql = "select * from new where [name] like '%" + txtSearch + "%'";
+        String xName, xImage, xContent;
+        String xTitle;
+        Date xDate;
+        int xId;
+        New x;
+        try {
+            ps = con.prepareStatement(xSql);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                xId = rs.getInt("id");
+                xName = rs.getString("name");
+                xImage = rs.getString("image");
+                xTitle = rs.getString("title");
+                xContent = rs.getString("content");
+                xDate = rs.getDate("date");
+                x = new New(xId, xName, xImage, xTitle, xContent, xDate);
+                list.add(x);
+            }
+            rs.close();
+            ps.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return (list);
+    }
+
 }
