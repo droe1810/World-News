@@ -55,8 +55,8 @@ public class PersonDAO extends MyDAO {
         }
         return x;
     }
-    
-        public Person getPersonByID(int id) {
+
+    public Person getPersonByID(int id) {
         xSql = "select * from person where id = ?";
         int xId;
         String xName;
@@ -81,4 +81,35 @@ public class PersonDAO extends MyDAO {
         return x;
 
     }
+
+    public void add(String name, Date dob, String address) {
+        xSql = "insert into person ([name],[dob],[address]) values (?,?,?)";
+        java.sql.Date xDob = (java.sql.Date) dob;
+        try {
+            ps = con.prepareStatement(xSql);
+            ps.setString(1, name);
+            ps.setDate(2, xDob);
+            ps.setString(3, address);
+            ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void edit(String name, Date dob, String address, int id) {
+        java.sql.Date xDob = (java.sql.Date) dob;
+        xSql = "update person set name = ?, dob = ?, address = ? where id=?";
+        try {
+            ps = con.prepareStatement(xSql);
+            ps.setString(1, name);
+            ps.setDate(2, xDob);
+            ps.setString(3, address);
+            ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 }
