@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Headlines</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	 <link href="css/element.css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+        <section id="header" class="clearfix">
+				<nav class="navbar navbar-default navbar-fixed-top">
+					<!-- /.container-fluid -->
+					<section id="menu_box">
+					  <div class="container">
+						 <div class="row">
+								 <div class="col-sm-12 menu_box">
+							<div class="col-sm-3">
+							  <div class="menu_box_1">
+								<h1><a href="index.html">Headlines!</a></h1>
+							  </div>
+							</div>
+							 <div class="col-sm-6">
+							   <div class="menu_box_2">
+								 <input class="form_1" type="text">
+								 <a href="#">Search More</a>
+							   </div>
+							 </div>
+							  <div class="col-sm-3">
+							   <div class="menu_box_3 text-right">
+								 <span class="tag_1"><a href="#">Log in</a></span>
+								 <span class="tag_2"><a href="#"><i class="fa fa-envelope"></i>Email</a></span>
+							   </div>
+							  </div>
+						  </div>
+						  </div>
+					</div>
+					</section>
+					<div class="navbar-header page-scroll">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a href="index.html" class="navbar-brand">Headlines!</a>
+						</div>
+
+					<div class="container">
+						  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="hidden">
+									<a href="#page-top"></a>
+								</li>
+								<li>
+									<a class="li_1" href="index.html"><i class="fa fa-home"></i>Home</a>
+								</li>
+								<li>
+									<a class="li_1" href="list.html">Listing</a>
+								</li>
+								
+								<li>
+									<a class="li_1" href="detail.html">Detail</a>
+								</li> 
+								<li class="active_1">
+									<a class="li_1" href="sports.html">Trending</a>
+								</li>
+								
+								<li>
+									<a class="li_1" href="contact.html">Contact</a>
+								</li>
+								
+								<li class="dropdown">
+								<a class="dropdown-toggle li_1" data-toggle="dropdown" href="#" aria-expanded="false">More
+								<span class="caret"></span></a>
+								<ul class="dropdown-menu drop_1">
+								  <li><a href="index.html">Views</a></li>
+								  <li><a href="#">Popular</a></li>
+								  <li><a href="contact.html">Cinema</a></li> 
+								  <li><a href="sports.html">Lyrics</a></li>
+								  <li><a href="detail.html">Theatre</a></li>
+								  <li><a href="index.html">Fashion</a></li> 
+								  <li><a href="#">World</a></li>
+								  <li><a href="detail.html">Trending</a></li>
+								  <li><a href="contact.html">Market</a></li> 
+								</ul>
+							  </li>
+							  
+							   <li class="dropdown dropdown-large">
+				<a href="#" class="dropdown-toggle li_1" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+				
+				<ul class="dropdown-menu dropdown-menu-large row">
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Glyphicons</li>
+							<li><a href="#">Available glyphs</a></li>
+							<li class="disabled"><a href="#">How to use</a></li>
+							<li><a href="#">Examples</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Dropdowns</li>
+							<li><a href="#">Example</a></li>
+							<li><a href="#">Aligninment options</a></li>
+							<li><a href="#">Headers</a></li>
+							<li><a href="#">Disabled menu items</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Button groups</li>
+							<li><a href="#">Basic example</a></li>
+							<li><a href="#">Button toolbar</a></li>
+							<li><a href="#">Sizing</a></li>
+							<li><a href="#">Nesting</a></li>
+							<li><a href="#">Vertical variation</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Button dropdowns</li>
+							<li><a href="#">Single button dropdowns</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Input groups</li>
+							<li><a href="#">Basic example</a></li>
+							<li><a href="#">Sizing</a></li>
+							<li><a href="#">Checkboxes and radio addons</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Navs</li>
+							<li><a href="#">Tabs</a></li>
+							<li><a href="#">Pills</a></li>
+							<li><a href="#">Justified</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Navbar</li>
+							<li><a href="#">Default navbar</a></li>
+							<li><a href="#">Buttons</a></li>
+							<li><a href="#">Text</a></li>
+							<li><a href="#">Non-nav links</a></li>
+							<li><a href="#">Component alignment</a></li>
+							<li><a href="#">Fixed to top</a></li>
+							<li><a href="#">Fixed to bottom</a></li>
+							<li><a href="#">Static top</a></li>
+							<li><a href="#">Inverted navbar</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</li>
+							</ul>
+						</div>
+						</div>
+			  
+				</nav>
+         </section>
+		 
+	    <section id="center">
+		  <div class="container">
+		    <div class="row">
+			 <div class="col-sm-12 center_main">
+			  <div class="col-sm-2">
+			   <div class="center_1">
+			     <ul>
+					  <li><a class="icon_1" href="#"><i class="fa fa-envelope"></i>Email</a></li>
+					  <li><a class="icon_2" href="#"><i class="fa fa-newspaper-o"></i>World</a></li>
+					  <li><a class="icon_3" href="#"><i class="fa fa-fighter-jet"></i>Views</a></li>
+					  <li><a class="icon_4" href="#"><i class="fa fa-gamepad"></i>Game</a></li>
+					  <li><a class="icon_1" href="#"><i class="fa fa-cube"></i>Popular</a></li>
+					  <li><a class="icon_2" href="#"><i class="fa fa-power-off"></i>Political</a></li>
+					  <li><a class="icon_3" href="#"><i class="fa fa-certificate"></i>Hollywood</a></li>
+					  <li><a class="icon_4" href="#"><i class="fa fa-tv"></i>Pc</a></li>
+					   <li><a class="icon_1" href="#"><i class="fa fa-play"></i>Videos</a></li>
+					  <li><a class="icon_2" href="#"><i class="fa fa-mobile"></i>Mobile</a></li>
+					  <li><a class="icon_3" href="#"><i class="fa fa-dot-circle-o"></i>Extra</a></li>
+					 
+				 </ul>
+				 <div class="home_1"><a href="#">Subscribe</a></div>
+			   </div>
+			  </div>
+			  <div class="col-sm-7">
+			   <div class="sports clearfix">
+			     <div class="col-sm-12 sports_inner">
+				   <div class="col-sm-7">
+			<!-- artigo em destaque -->
+			<div class="featured-article">
+				<a href="#">
+					<img src="img/55.jpg" width="100%" alt="" class="thumb">
+				</a>
+				<div class="block-title">
+					<h2>Lorem ipsum dolor  amet</h2>
+					<p class="by-author"><small>By Nulla Quis</small></p>
+				</div>
+			</div>
+			<!-- /.featured-article -->
+		</div>
+	        	   <div class="col-sm-5">
+			<ul class="media-list main-list">
+			  <li class="media">
+			    <a class="pull-left" href="#">
+			      <img class="media-object" src="img/56.jpg" alt="...">
+			    </a>
+			    <div class="media-body">
+			      <h4 class="media-heading">Lorem ipsum dolor asit amet</h4>
+			      <p class="by-author">By Nulla Quis</p>
+			    </div>
+			  </li>
+			  <li class="media">
+			    <a class="pull-left" href="#">
+			      <img class="media-object" src="img/57.jpg" alt="...">
+			    </a>
+			    <div class="media-body">
+			      <h4 class="media-heading">Lorem ipsum dolor asit amet</h4>
+			      <p class="by-author">By Nulla Quis</p>
+			    </div>
+			  </li>
+			  <li class="media border_none_1">
+			    <a class="pull-left" href="#">
+			      <img class="media-object" src="img/58.jpg" alt="...">
+			    </a>
+			    <div class="media-body">
+			      <h4 class="media-heading">Lorem ipsum dolor asit amet</h4>
+			      <p class="by-author">By Nulla Quis</p>
+			    </div>
+			  </li>
+			</ul>
+		</div>
+				 </div>
+				 <div class="col-sm-12 sports_inner_1">
+				  <h6><a href="#"><span>Games</span>Shooting</a></h6>
+				  <h3><a href="#">Nulla quis sem at nibh elementum imperdiet Duis sagittis ipsum'</a></h3>
+				  <p><a href="#"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitursodales ligula in libero.Sed dignissim lacinia nunc.</a>
+
+</p>
+				 </div>
+				 <div class="col-sm-12 sports_inner_1">
+				  <h6><a href="#"><span class="color_text_2">Headlines</span>Stream</a></h6>
+				  <h3><a href="#">Nulla quis sem at nibh elementum imperdiet Duis sagittis ipsum'</a></h3>
+				  <p><a href="#"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitursodales ligula in libero. Sed dignissim lacinia nunc.</a>
+
+</p>
+				 </div>
+				 <div class="col-sm-12 sports_inner_1">
+				      <div class="col-sm-4">
+					    <a href="#"><img src="img/59.jpg" width="100%"></a>
+					  </div>
+					  <div class="col-sm-8">
+						  <h6><a href="#"><span class="color_text">Webworld</span>Designing</a></h6>
+						  <h3><a href="#"> Duis sagittis ipsum. Praesent mauris?</a></h3>
+						  <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</a>
+		
+		</p>
+					  </div>
+				 </div>
+				 <div class="col-sm-12 sports_inner_1">
+				      <div class="col-sm-4">
+					    <a href="#"><img src="img/60.jpg" width="100%"></a>
+					  </div>
+					  <div class="col-sm-8">
+						  <h6><a href="#"><span class="color_text_2">Responsive</span>Regular</a></h6>
+						  <h3><a href="#">Duis sagittis ipsum. Praesent mauris?</a></h3>
+						  <p><a href="#"> Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum</a>
+		
+		</p>
+					  </div>
+				 </div>
+				 <div class="col-sm-12  sports_inner_main">
+			     <div class="col-sm-4">
+				   <div class="center_2_inner_1">
+				     <a href="#"><img src="img/8.jpg" width="100%"></a>
+				   </div>
+				 </div>
+				 <div class="col-sm-8">
+				   <div class="center_2_inner_2">
+				     <h5><a class="color_text_1" href="#">Bollywood</a></h5>
+					 <h4>
+					 <a href="#">
+                       Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+					 </a></h4>
+					 <p><a href="#">
+					    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.<br><span>Elementum Imperdiet</span>
+					 </a></p>
+				   </div>
+				   <div class="col-sm-12 center_block">
+				     <div class="col-sm-6">
+				        <div class="col-sm-4">
+					  <div class="center_block_1">
+					    <a href="#"><img src="img/9.jpg" width="100%"></a>
+					  </div>
+					</div>
+					    <div class="col-sm-8">
+						  <div class="center_block_2">
+						    <p><a href="#">Curabitursodales ligula in libero lacinia nunc conubia </a></p>
+							<span><a href="#">Trending</a></span>
+						  </div>
+						</div>
+				     </div>
+					 <div class="col-sm-6">
+				        <div class="col-sm-4">
+					  <div class="center_block_1">
+					    <a href="#"><img src="img/10.jpg" width="100%"></a>
+					  </div>
+					</div>
+					    <div class="col-sm-8">
+						  <div class="center_block_2">
+						    <p><a href="#">Aptent taciti sociosqu ad litora torquent per conubia </a></p>
+							<span><a href="#">Popular</a></span>
+						  </div>
+						</div>
+				     </div>
+				   </div>
+				   
+				 </div>
+			   </div>
+			     <div class="col-sm-12 sports_inner_1">
+				      <div class="col-sm-4">
+					    <a href="#"><img src="img/61.jpg" width="100%"></a>
+					  </div>
+					  <div class="col-sm-8">
+						  <h6><a href="#"><span class="color_text_2">Plays</span>Latest</a></h6>
+						  <h3><a href="#">Duis sagittis ipsum. Praesent mauris?</a></h3>
+						  <p><a href="#"> Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum</a>
+		
+		</p>
+					  </div>
+				 </div>
+				 <div class="col-sm-12  sports_inner_main">
+			     <div class="col-sm-4">
+				   <div class="center_2_inner_1">
+				     <a href="#"><img src="img/62.jpg" width="100%"></a>
+				   </div>
+				 </div>
+				 <div class="col-sm-8">
+				   <div class="center_2_inner_2">
+				     <h5><a class="color_text_1" href="#">Popular</a></h5>
+					 <h4>
+					 <a href="#">
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+					 </a></h4>
+					 <p><a href="#">
+					    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.<br><span>Elementum Imperdiet</span>
+					 </a></p>
+				   </div>
+				   <div class="col-sm-12 center_block">
+				     <div class="col-sm-6">
+				        <div class="col-sm-4">
+					  <div class="center_block_1">
+					    <a href="#"><img src="img/63.jpg" width="100%"></a>
+					  </div>
+					</div>
+					    <div class="col-sm-8">
+						  <div class="center_block_2">
+						    <p><a href="#">Aptent taciti sociosqu ad litora torquent per conubia </a></p>
+							<span><a href="#">Trending</a></span>
+						  </div>
+						</div>
+				     </div>
+					 <div class="col-sm-6">
+				        <div class="col-sm-4">
+					  <div class="center_block_1">
+					    <a href="#"><img src="img/64.jpg" width="100%"></a>
+					  </div>
+					</div>
+					    <div class="col-sm-8">
+						  <div class="center_block_2">
+						    <p><a href="#">Curabitursodales ligula in libero lacinia nunc conubia </a></p>
+							<span><a href="#">Latest</a></span>
+						  </div>
+						</div>
+				     </div>
+				   </div>
+				   
+				 </div>
+			   </div>
+			     <div class="col-sm-12 sports_inner_1">
+				      <div class="col-sm-4">
+					    <a href="#"><img src="img/65.jpg" width="100%"></a>
+					  </div>
+					  <div class="col-sm-8">
+						  <h6><a href="#"><span>Fashion</span>Designing</a></h6>
+						  <h3><a href="#">Duis sagittis ipsum. Praesent mauris?</a></h3>
+						  <p><a href="#"> Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum</a>
+		
+		</p>
+					  </div>
+				 </div>
+				 <div class="col-sm-12 sports_inner_1">
+				      <div class="col-sm-4">
+					    <a href="#"><img src="img/66.jpg" width="100%"></a>
+					  </div>
+					  <div class="col-sm-8">
+						  <h6><a href="#"><span class="color_text">Computer</span>World</a></h6>
+						  <h3><a href="#">Duis sagittis ipsum. Praesent mauris?</a></h3>
+						  <p><a href="#"> Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum</a>
+		
+		</p>
+					  </div>
+				 </div>
+				 <div class="col-sm-12  sports_inner_main">
+			     <div class="col-sm-4">
+				   <div class="center_2_inner_1">
+				     <a href="#"><img src="img/67.jpg" width="100%"></a>
+				   </div>
+				 </div>
+				 <div class="col-sm-8">
+				   <div class="center_2_inner_2">
+				     <h5><a class="color_text_1" href="#">Popular</a></h5>
+					 <h4>
+					 <a href="#">
+                        Integer nec odio. Praesent libero. Sed cursus ante dapibus diam
+					 </a></h4>
+					 <p><a href="#">
+					    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.<br><span>Sed cursus ante</span>
+					 </a></p>
+				   </div>
+				   <div class="col-sm-12 center_block">
+				     <div class="col-sm-6">
+				        <div class="col-sm-4">
+					  <div class="center_block_1">
+					    <a href="#"><img src="img/68.jpg" width="100%"></a>
+					  </div>
+					</div>
+					    <div class="col-sm-8">
+						  <div class="center_block_2">
+						    <p><a href="#">Curabitursodales ligula in libero lacinia nunc conubia </a></p>
+							<span><a href="#">Headlines</a></span>
+						  </div>
+						</div>
+				     </div>
+					 <div class="col-sm-6">
+				        <div class="col-sm-4">
+					  <div class="center_block_1">
+					    <a href="#"><img src="img/69.jpg" width="100%"></a>
+					  </div>
+					</div>
+					    <div class="col-sm-8">
+						  <div class="center_block_2">
+						    <p><a href="#">Aptent taciti sociosqu ad litora torquent per conubia </a></p>
+							<span><a href="#">Portblair</a></span>
+						  </div>
+						</div>
+				     </div>
+				   </div>
+				   
+				 </div>
+			   </div>
+			     <div class="col-sm-12  sports_inner_main">
+			     <div class="col-sm-4">
+				   <div class="center_2_inner_1">
+				     <a href="#"><img src="img/70.jpg" width="100%"></a>
+				   </div>
+				 </div>
+				 <div class="col-sm-8">
+				   <div class="center_2_inner_2">
+				     <h5><a class="color_text_1" href="#">Shopping</a></h5>
+					 <h4>
+					 <a href="#">
+                        Integer nec odio. Praesent libero. Sed cursus ante dapibus diam
+					 </a></h4>
+					 <p><a href="#">
+					    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.<br><span>Sed cursus ante</span>
+					 </a></p>
+				   </div>
+				   <div class="col-sm-12 center_block">
+				     <div class="col-sm-6">
+				        <div class="col-sm-4">
+					  <div class="center_block_1">
+					    <a href="#"><img src="img/71.jpg" width="100%"></a>
+					  </div>
+					</div>
+					    <div class="col-sm-8">
+						  <div class="center_block_2">
+						    <p><a href="#">Aptent taciti sociosqu ad litora torquent per conubia </a></p>
+							<span><a href="#">World</a></span>
+						  </div>
+						</div>
+				     </div>
+					 <div class="col-sm-6">
+				        <div class="col-sm-4">
+					  <div class="center_block_1">
+					    <a href="#"><img src="img/72.jpg" width="100%"></a>
+					  </div>
+					</div>
+					    <div class="col-sm-8">
+						  <div class="center_block_2">
+						    <p><a href="#">Curabitursodales ligula in libero lacinia nunc conubia </a></p>
+							<span><a href="#">America</a></span>
+						  </div>
+						</div>
+				     </div>
+				   </div>
+				   
+				 </div>
+			   </div>
+			     <div class="col-sm-12 sports_inner_1">
+				  <h6><a href="#"><span>Website</span>World</a></h6>
+				  <h3><a href="#">Nulla quis sem at nibh elementum imperdiet Duis sagittis ipsum'</a></h3>
+				  <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitursodales ligula in libero. Sed dignissim lacinia nunc.</a>
+
+</p>
+				 </div>
+				 <div class="col-sm-12 sports_inner_1">
+				  <h6><a href="#"><span class="color_text_2">Support</span>Language</a></h6>
+				  <h3><a href="#"> Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</a></h3>
+				  <p><a href="#">Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitursodales ligula in libero. Sed dignissim lacinia nunc.</a>
+
+</p>
+				 </div>
+			   </div>
+			  </div>
+			  <div class="col-sm-3">
+			   <div class="sports_right clearfix">
+			     <div class="col-sm-12 sports_right_main">
+				   <h5>Latest News</h5>
+				   <ul>
+				    <li><i class="fa fa-arrow-right"></i></li>
+					<li><a href="#">Nulla quis sem at nibh elementum imperdiet</a></li>
+					<li class="time">1hrs</li>
+				   </ul>
+				   <ul>
+				    <li><i class="fa fa-arrow-right"></i></li>
+					<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+					<li class="time">2hrs</li>
+				   </ul>
+				   <ul>
+				    <li><i class="fa fa-arrow-right"></i></li>
+					<li><a href="#">Curabitursodales ligula in libero.</a></li>
+					<li class="time">3hrs</li>
+				   </ul>
+				   <ul>
+				    <li><i class="fa fa-arrow-right"></i></li>
+					<li><a href="#">Class aptent taciti sociosqu ad litora torquent per conubia.</a></li>
+					<li class="time">4hrs</li>
+				   </ul>
+				   <ul>
+				    <li><i class="fa fa-arrow-right"></i></li>
+					<li><a href="#">Fusce nec tellus sed augue semper porta.</a></li>
+					<li class="time">5hrs</li>
+				   </ul>
+				 </div>
+				 <div class="col-sm-12 sports_right_image_main">
+				    <div class="center_3_blog_image">
+			 <a href="#"><img src="img/73.jpg" width="100%"></a>
+			 <h5>
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit Integer nec odio.
+			 </h5>
+			 <h6><a href="#">Marketing Products</a></h6>
+			</div>
+				  </div>
+				  <div class="col-sm-12 center_3_image">
+				    <div class="media">
+						<a href="#">
+							<img class="media-object dp " src="img/74.jpg" width="100%">
+						</a>
+                     </div>
+				  </div>
+				  <div class="col-sm-12 sports_right_text_main">
+				    <select class="form-control_1" name="country" id="country">
+    						<option name="Profile Type" value="None">All Department</option>
+    						<option value="AR">Lorem ipsum</option>
+    						<option value="AU">Praesent libero</option>
+    						<option value="AT">Sed cursus</option>
+    						<option value="BY">Dapibus diam</option>
+    						<option value="BE">Sed nisi</option>
+    						<option value="BA">Nulla quis sem </option>
+    						<option value="BR"> Nibh  imperdiet</option>
+    						<option value="BG">Duis sagittis</option>
+    						<option value="AR">Lorem ipsum</option>
+    						<option value="AU">Praesent libero</option>
+    						<option value="AT">Sed cursus</option>
+    						<option value="BY">Dapibus diam</option>
+    						<option value="BE">Sed nisi</option>
+    						<option value="BA">Nulla quis sem </option>
+    						<option value="BR"> Nibh  imperdiet</option>
+    						<option value="BG">Duis sagittis</option>
+    						<option value="BR"> Nibh  imperdiet</option>
+    						<option value="BG">Duis sagittis</option>
+    						<option value="HK"> Nec tellus sed augue abc</option>
+							<option value="BY">Dapibus diam</option>
+    						<option value="BE">Sed nisi</option>
+    						<option value="BA">Nulla quis sem </option>
+    						<option value="BR"> Nibh  imperdiet</option>
+    						<option value="BG">Duis sagittis</option>
+    						<option value="BR"> Nibh  imperdiet</option>
+    						<option value="BG">Duis sagittis</option>
+    						<option value="HK"> Nec tellus sed augue abc</option>
+    			
+    					</select>
+				  </div>
+				  <div class="col-sm-12 center_3_link">
+				   <a href="#"><img class="img-rounded" src="img/76.jpg" width="100%"></a>
+				   <p><a href="#">Web World</a></p>
+				   <h4><a href="#"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</a></h4>
+				  </div>
+				  <div class="col-sm-12 sports_right_text_main_1">
+				    <h5>Analyze</h5>
+					<p> Sed cursus ante dapibus diam  Nulla quis sem at nibh elementum imperdiet.</p>
+                     <div id="custom-search-input">
+                            <div class="input-group col-md-12">
+                                <input type="text" class="  search-query form-control" placeholder="Search">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button">
+                                        <span class=" glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+				  </div>
+				  <div class="col-sm-12 center_3_image">
+				    <div class="media">
+						<a href="#">
+							<img class="media-object dp " src="img/75.jpg" width="100%">
+						</a>
+                     </div>
+				  </div>
+				  <div class="col-sm-12 sports_right_image_main">
+				    <div class="center_3_blog_image">
+			 <a href="#"><img src="img/77.jpg" width="100%"></a>
+			 <h5>
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit Integer nec odio.
+			 </h5>
+			 <h6><a href="#">Marketing Products</a></h6>
+			</div>
+				  </div>
+				  <div class="col-sm-12 sports_last">
+		    <p> © 2013 Your Website Name. All Rights Reserved | Design by <a href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+		  </div>
+			   </div>
+			  </div>
+			 </div>
+			</div>
+		  </div>
+		 </section>
+		 
+		<section id="footer">
+	   <div class="container">
+	     <div class="row">
+		   <div class="col-sm-12">
+		     <div class="col-sm-3">
+			   <div class="footer_1">
+			     <h3>ABOUT US</h3>
+				 <hr> 
+				 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+				 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+			   </div>
+			 </div>
+			 <div class="col-sm-3">
+			   <div class="footer_2">
+			      <h3>CONTACT INFO</h3>
+				 <hr>
+				 <p><i class="glyphicon glyphicon-map-marker"></i>4543k Integer, 7th block,<br><span class="city">Dolor Sit City.</span></p>
+				 <p><i class="glyphicon glyphicon-envelope"></i>info@gmail.com</p>
+				 <p><i class="glyphicon glyphicon-earphone"></i>+1234 567 890</p>
+			   </div> 
+			 </div>
+			 <div class="col-sm-3">
+			  <div class="footer_3">
+			     <h3>FLICKR POSTS</h3>
+				 <hr>
+				 <div class="col-sm-12">
+				   <div class="col-sm-4">
+				     <div class="footer_3_image"><a href="#"><img src="img/36.jpg"></a></div>
+				   </div>
+				   <div class="col-sm-4">
+				     <div class="footer_3_image"><a href="#"><img src="img/37.jpg"></a></div>
+				   </div>
+				   <div class="col-sm-4">
+				     <div class="footer_3_image"><a href="#"><img src="img/38.jpg"></a></div>
+				   </div>
+				 </div>
+				 <div class="col-sm-12">
+				   <div class="col-sm-4">
+				     <div class="footer_3_image"><a href="#"><img src="img/39.jpg"></a></div>
+				   </div>
+				   <div class="col-sm-4">
+				     <div class="footer_3_image"><a href="#"><img src="img/40.jpg"></a></div>
+				   </div>
+				   <div class="col-sm-4">
+				     <div class="footer_3_image"><a href="#"><img src="img/41.jpg"></a></div>
+				   </div>
+				 </div>
+				 <div class="col-sm-12">
+				   <div class="col-sm-4">
+				     <div class="footer_3_image"><a href="#"><img src="img/42.jpg"></a></div>
+				   </div>
+				   <div class="col-sm-4">
+				     <div class="footer_3_image"><a href="#"><img src="img/43.jpg"></a></div>
+				   </div>
+				   <div class="col-sm-4">
+				     <div class="footer_3_image"><a href="#"><img src="img/44.jpg"></a></div>
+				   </div>
+				 </div>
+			  </div>
+			 </div>
+			 <div class="col-sm-3">
+			  <div class="footer_4 clearfix">
+			    <h3>BLOG POSTS</h3>
+				 <hr>
+				 <div class="col-sm-12">
+				   <div class="col-sm-4">
+				     <div class="footer_4_image"><img src="img/45.jpg"></div>
+				   </div>
+				   <div class="col-sm-8">
+				     <div class="footer_4_para">
+					  <h4><a href="#">Nulla quis sem at nibh <br>Deserunt</h4></a><p>Posted On 15/4/2015</p>
+					 </div>
+				   </div>
+				 </div>
+				 <div class="col-sm-12">
+				   <div class="col-sm-4">
+				     <div class="footer_4_image"><img src="img/46.jpg"></div>
+				   </div>
+				   <div class="col-sm-8">
+				     <div class="footer_4_para">
+					  <h4><a href="#">Nulla quis sem at nibh <br>Deserunt</h4></a><p>Posted On 15/4/2015</p>
+					 </div>
+				   </div>
+				 </div>
+				 <div class="col-sm-12">
+				   <div class="col-sm-4">
+				     <div class="footer_4_image"><img src="img/47.jpg"></div>
+				   </div>
+				   <div class="col-sm-8">
+				     <div class="footer_4_para">
+					  <h4><a href="#">Nulla quis sem at nibh <br>Deserunt</h4></a><p>Posted On 15/4/2015</p>
+					 </div>
+				   </div>
+				 </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+	   </div>
+	 </section>
+	    
+		<section id="footer_bottom">
+	   <div class="container">
+	    <div class="row">
+		  <div class="col-sm-12">
+		    <p> © 2013 Your Website Name. All Rights Reserved | Design by <a href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+		  </div>
+		</div> 
+	   </div>
+	 </section>
+		 
+
+  <!-- //for header -->	
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+  <!-- //for header_end -->	
+  </body>
+       
+</html>
