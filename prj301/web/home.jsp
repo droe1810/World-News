@@ -48,7 +48,7 @@
                         </div>
                     </div>
                 </section>
-                
+
                 <div class="container">
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
@@ -94,74 +94,27 @@
                             </div>
                         </div>
                         <div class="col-sm-7">
-                            <div class="col-sm-12 center_2">
-                                <div id="main_area">
-                                    <!-- Slider -->
-                                    <div class="row">
-                                        <div class="col-xs-12" id="slider">
-                                            <!-- Top part of the slider -->
-                                            <div class="row">
-                                                <div id="slide-content" style="display: none;">
-                                                    <div id="slide-content-0">
-                                                        <h2>Slider One</h2>
-                                                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris.</p>
-                                                        <p class="sub-text">October 26 2014 - <a href="#">Read more</a></p>
-                                                    </div>
-
-                                                    <div id="slide-content-1">
-                                                        <h2>Slider Two</h2>
-                                                        <p>  Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitursodales ligula in libero.Sed dignissim lacinia nunc.</p>
-                                                        <p class="sub-text">October 27 2014 - <a href="#">Read more</a></p>
-                                                    </div>
-
-                                                    <div id="slide-content-2">
-                                                        <h2>Slider Three</h2>
-                                                        <p> Integer nec odio.Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris ligula in libero.Sed dignissim lacinia nunc.</p>
-                                                        <p class="sub-text">October 28 2014 - <a href="#">Read more</a></p>
-                                                    </div>
-
-                                                    <div id="slide-content-3">
-                                                        <h2>Slider Four</h2>
-                                                        <p> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris. Curabitursodales ligula in libero.Sed dignissim lacinia nunc.</p>
-                                                        <p class="sub-text">October 29 2014 - <a href="#">Read more</a></p>
-                                                    </div>
-
-                                                    <div id="slide-content-4">
-                                                        <h2>Slider Five</h2>
-                                                        <p>  Duis sagittis ipsum.Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-                                                        <p class="sub-text">October 30 2014 - <a href="#">Read more</a></p>
-                                                    </div>
-
-                                                    <div id="slide-content-5">
-                                                        <h2>Slider Six</h2>
-                                                        <p> Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris. Fusce nec tellus sed augue semper porta.Curabitursodales ligula in libero.Sed dignissim lacinia nunc.</p>
-                                                        <p class="sub-text">October 31 2014 - <a href="#">Read more</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                            <c:forEach items="${listN}" var="o">
+                                <div class="col-sm-12 center_2_inner_main_1">
+                                    <div class="col-sm-4">
+                                        <div class="center_2_inner_1">
+                                            <a href="#"><img src="${o.image}" width="100%"></a>
                                         </div>
-                                    </div><!--/Slider-->
-                                </div>
-                            </div>
-
-                            <div class="col-sm-12 center_2_inner_main_1">
-                                <div class="col-sm-4">
-                                    <div class="center_2_inner_1">
-                                        <a href="#"><img src="img/8.jpg" width="100%"></a>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="center_2_inner_2">
+                                            <h4>
+                                                <a href="detail?id=${o.id}">
+                                                    ${o.name}                                              
+                                                </a>
+                                            </h4>
+                                            <p><a href="#">
+                                                    ${o.title}
+                                                </a></p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-8">
-                                    <div class="center_2_inner_2">
-                                        <h4>
-                                            <a href="#">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit integer nec odio.
-                                            </a></h4>
-                                        <p><a href="#">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.<br><span>Ligula in libero</span>
-                                            </a></p>
-                                    </div>
-                                </div>
-                            </div>
+                            </c:forEach>
                         </div>
                         <div class="col-sm-3">
                             <div class="center_3">
