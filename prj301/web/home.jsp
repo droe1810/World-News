@@ -7,7 +7,7 @@
 
 <html>
     <head>
-        <title>Headlines</title>
+        <title>WorldNews</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,35 +29,26 @@
                             <div class="col-sm-12 menu_box">
                                 <div class="col-sm-3">
                                     <div class="menu_box_1">
-                                        <h1><a href="home">Headlines!</a></h1>
+                                        <h1><a href="home">WorldNews!</a></h1>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="menu_box_2">
                                         <input class="form_1" type="text">
-                                        <a href="#">Search More</a>
+                                        <a href="#">Search </a>
                                     </div>
                                 </div>
                                 <div class="col-sm-3">
                                     <div class="menu_box_3 text-right">
-                                        <span class="tag_1"><a href="#">Log in</a></span>
-                                        <span class="tag_2"><a href="#"><i class="fa fa-envelope"></i>Email</a></span>
+                                        <span class="tag_1"><a href="login.jsp">Log in</a></span>
+                                        <span class="tag_1"><a href="logout">Log out</a></span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <div class="navbar-header page-scroll">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar">b</span>
-                        <span class="icon-bar">b</span>
-                        <span class="icon-bar">b</span>
-                    </button>
-                    <a href="index.html" class="navbar-brand">aaaa!</a>
-                </div>
-
+                
                 <div class="container">
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
@@ -68,18 +59,18 @@
                                 <a class="li_1" href="home"><i class="fa fa-home"></i>Home</a>
                             </li>
                             <li>
-                                <a class="li_1" href="list.html">Listing</a>
+                                <a class="li_1" href="addnew">Post New</a>
                             </li>
 
                             <li>
-                                <a class="li_1" href="detail.html">Detail</a>
+                                <a class="li_1" href="managerwriter">Manager Writer</a>
                             </li> 
                             <li>
-                                <a class="li_1" href="sports.html">Trending</a>
+                                <a class="li_1" href="managernew">Manager New</a>
                             </li>
 
                             <li>
-                                <a class="li_1" href="contact.html">Contact</a>
+                                <a class="li_1" href="viewprofile">Profile</a>
                             </li>
                         </ul>
                     </div>
@@ -174,7 +165,7 @@
                         </div>
                         <div class="col-sm-3">
                             <div class="center_3">
-                                            <div class="col-sm-12 weather">
+                                <div class="col-sm-12 weather">
                                     <h4><a href="#">Ha Noi<i class="fa fa-map-marker"></i></a></h4>
                                     <div class="col-sm-3">
                                         <div class="weather_1 text-center">
@@ -218,7 +209,7 @@
                                     </div>
                                 </div>
                                 <h5><a href="#">Lastest News</a></h5>           
-                    
+
                                 <div class="col-sm-12 center_3_link">
                                     <a href="#"><img class="img-circle" src="img/26.jpg" width="100%"></a>
                                     <p><a href="#">Good Evening World</a></p>
@@ -243,7 +234,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
