@@ -33,10 +33,12 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="menu_box_2">
-                                        <input class="form_1" type="text">
-                                        <a href="#">Search </a>
-                                    </div>
+                                    <form action="search" method="post"  >
+                                        <div class="menu_box_2">
+                                            <input name="txt" class="form_1" type="text" value="${txtSearch}" placeholder="Search...">
+                                            <input type="submit" value="Ok">
+                                        </div>
+                                    </form>                             
                                 </div>
                                 <div class="col-sm-3">
                                     <div class="menu_box_3 text-right">
