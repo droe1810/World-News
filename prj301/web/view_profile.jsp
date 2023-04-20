@@ -22,7 +22,7 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <h2> <b> Profile</b></h2>
-                            <button class = "btn btn-primary" onclick='window.history.go(-1);'>Back</button>                       
+                            <a class = "btn btn-primary" href="home"> Back to home</a>                  
                         </div>
 
                         <div class="col-sm-6">

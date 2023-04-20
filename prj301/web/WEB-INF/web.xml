@@ -24,6 +24,14 @@
         <servlet-name>ViewProfileServlet</servlet-name>
         <servlet-class>controller.ViewProfileServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LoadProfileServlet</servlet-name>
+        <servlet-class>controller.LoadProfileServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateProfileServlet</servlet-name>
+        <servlet-class>controller.UpdateProfileServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeServlet</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -50,6 +58,14 @@
     <servlet-mapping>
         <servlet-name>ViewProfileServlet</servlet-name>
         <url-pattern>/viewprofile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoadProfileServlet</servlet-name>
+        <url-pattern>/loadprofile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateProfileServlet</servlet-name>
+        <url-pattern>/updateprofile</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

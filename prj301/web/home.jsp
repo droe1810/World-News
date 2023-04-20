@@ -74,7 +74,6 @@
                             </c:if>
 
                             <c:if test="${sessionScope.acc.isAdmin == 1}">
-
                                 <li>
                                     <a class="li_1" href="managerwriter">Manager Writer</a>
                                 </li> 

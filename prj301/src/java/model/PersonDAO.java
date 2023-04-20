@@ -105,6 +105,7 @@ public class PersonDAO extends MyDAO {
             ps.setString(1, name);
             ps.setDate(2, xDob);
             ps.setString(3, address);
+            ps.setInt(4, id);
             ps.executeUpdate();
             ps.close();
         } catch (Exception e) {
