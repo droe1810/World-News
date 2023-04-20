@@ -20,6 +20,10 @@
         <servlet-name>DetailServlet</servlet-name>
         <servlet-class>controller.DetailServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ViewProfileServlet</servlet-name>
+        <servlet-class>controller.ViewProfileServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeServlet</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -42,6 +46,10 @@
     <servlet-mapping>
         <servlet-name>DetailServlet</servlet-name>
         <url-pattern>/detail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewProfileServlet</servlet-name>
+        <url-pattern>/viewprofile</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
