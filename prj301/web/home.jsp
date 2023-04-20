@@ -42,8 +42,14 @@
                                 </div>
                                 <div class="col-sm-3">
                                     <div class="menu_box_3 text-right">
-                                        <span class="tag_1"><a href="login.jsp">Log in</a></span>
-                                        <span class="tag_1"><a href="logout">Log out</a></span>
+                                        <c:if test="${sessionScope.acc == null}">
+                                            <span class="tag_1"><a href="login.jsp">Log in</a></span>
+                                        </c:if>
+
+                                        <c:if test="${sessionScope.acc != null}">
+                                            <span class="tag_1"><a href="logout">Log out</a></span>
+                                        </c:if>
+
                                     </div>
                                 </div>
                             </div>
@@ -60,20 +66,33 @@
                             <li class="active_1">
                                 <a class="li_1" href="home"><i class="fa fa-home"></i>Home</a>
                             </li>
-                            <li>
-                                <a class="li_1" href="addnew">Post New</a>
-                            </li>
 
-                            <li>
-                                <a class="li_1" href="managerwriter">Manager Writer</a>
-                            </li> 
-                            <li>
-                                <a class="li_1" href="managernew">Manager New</a>
-                            </li>
+                            <c:if test="${sessionScope.acc != null}">
+                                <li>
+                                    <a class="li_1" href="addnew">Post New</a>
+                                </li>
+                            </c:if>
 
-                            <li>
-                                <a class="li_1" href="viewprofile">Profile</a>
-                            </li>
+                            <c:if test="${sessionScope.acc.isAdmin == 1}">
+
+                                <li>
+                                    <a class="li_1" href="managerwriter">Manager Writer</a>
+                                </li> 
+                            </c:if>
+
+                            <c:if test="${sessionScope.isWrinter == 1 }">
+                                <li>
+                                    <a class="li_1" href="managernew">Manager New</a>
+                                </li>
+                            </c:if>
+
+
+                            <c:if test="${sessionScope.acc != null}">
+                                <li>
+                                    <a class="li_1" href="viewprofile">Profile</a>
+                                </li>
+                            </c:if>
+
                         </ul>
                     </div>
                 </div>
