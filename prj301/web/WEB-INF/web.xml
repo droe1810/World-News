@@ -56,6 +56,18 @@
         <servlet-name>AddNewServlet</servlet-name>
         <servlet-class>controller.AddNewServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ManagerWriterServlet</servlet-name>
+        <servlet-class>controller.ManagerWriterServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewWriterNewsServlet</servlet-name>
+        <servlet-class>controller.ViewWriterNewsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddPersonServlet</servlet-name>
+        <servlet-class>controller.AddPersonServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeServlet</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -114,6 +126,18 @@
     <servlet-mapping>
         <servlet-name>AddNewServlet</servlet-name>
         <url-pattern>/addnew</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManagerWriterServlet</servlet-name>
+        <url-pattern>/managerwriter</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewWriterNewsServlet</servlet-name>
+        <url-pattern>/viewwriternews</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddPersonServlet</servlet-name>
+        <url-pattern>/addperson</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
