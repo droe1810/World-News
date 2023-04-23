@@ -79,7 +79,7 @@
                                 </li> 
                             </c:if>
 
-                            <c:if test="${sessionScope.isWrinter == 1 }">
+                            <c:if test="${sessionScope.acc.isWriter == 1 }">
                                 <li>
                                     <a class="li_1" href="managernew">Manager New</a>
                                 </li>

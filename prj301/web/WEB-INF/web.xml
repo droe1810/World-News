@@ -32,6 +32,22 @@
         <servlet-name>UpdateProfileServlet</servlet-name>
         <servlet-class>controller.UpdateProfileServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ManagerNewServlet</servlet-name>
+        <servlet-class>controller.ManagerNewServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoadNewServlet</servlet-name>
+        <servlet-class>controller.LoadNewServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditNewServlet</servlet-name>
+        <servlet-class>controller.EditNewServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteNewServlet</servlet-name>
+        <servlet-class>controller.DeleteNewServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeServlet</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -66,6 +82,22 @@
     <servlet-mapping>
         <servlet-name>UpdateProfileServlet</servlet-name>
         <url-pattern>/updateprofile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManagerNewServlet</servlet-name>
+        <url-pattern>/managernew</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoadNewServlet</servlet-name>
+        <url-pattern>/loadnew</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditNewServlet</servlet-name>
+        <url-pattern>/editnew</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteNewServlet</servlet-name>
+        <url-pattern>/deletenew</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
