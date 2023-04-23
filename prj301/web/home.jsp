@@ -7,7 +7,7 @@
 
 <html>
     <head>
-        <title>WorldNews</title>
+        <title>World_News</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,6 +31,7 @@
                                     <div class="menu_box_1">
                                         <h1><a href="home">WorldNews!</a></h1>
                                     </div>
+                                    <p style="color: yellow">${mess}</p>
                                 </div>
                                 <div class="col-sm-6">
                                     <form action="search" method="post"  >
@@ -69,7 +70,7 @@
 
                             <c:if test="${sessionScope.acc != null}">
                                 <li>
-                                    <a class="li_1" href="addnew">Post New</a>
+                                    <a class="li_1" href="getcategory">Post New</a>
                                 </li>
                             </c:if>
 

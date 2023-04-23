@@ -48,6 +48,14 @@
         <servlet-name>DeleteNewServlet</servlet-name>
         <servlet-class>controller.DeleteNewServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GetCategoryServlet</servlet-name>
+        <servlet-class>controller.GetCategoryServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddNewServlet</servlet-name>
+        <servlet-class>controller.AddNewServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeServlet</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -98,6 +106,14 @@
     <servlet-mapping>
         <servlet-name>DeleteNewServlet</servlet-name>
         <url-pattern>/deletenew</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetCategoryServlet</servlet-name>
+        <url-pattern>/getcategory</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddNewServlet</servlet-name>
+        <url-pattern>/addnew</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
