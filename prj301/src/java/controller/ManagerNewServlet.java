@@ -12,10 +12,19 @@ public class ManagerNewServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
+
+        HttpSession session = request.getSession();
+        Account a = (Account) session.getAttribute("acc");
+        int id = a.getId();
         
         NewDAO nd = new NewDAO();
+        List<New> listN;
 
-        List<New> listN = nd.getAllNew();
+        if(a.getIsAdmin()== 1){
+             listN = nd.getAllNew();
+        } else {
+            listN = nd.getNewByWriterID(id);
+        }
 
         request.setAttribute("listN", listN);
 
