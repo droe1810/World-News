@@ -68,6 +68,14 @@
         <servlet-name>AddPersonServlet</servlet-name>
         <servlet-class>controller.AddPersonServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SearchNewServlet</servlet-name>
+        <servlet-class>controller.SearchNewServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SearchPersonServlet</servlet-name>
+        <servlet-class>controller.SearchPersonServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeServlet</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -138,6 +146,14 @@
     <servlet-mapping>
         <servlet-name>AddPersonServlet</servlet-name>
         <url-pattern>/addperson</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchNewServlet</servlet-name>
+        <url-pattern>/searchnew</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchPersonServlet</servlet-name>
+        <url-pattern>/searchperson</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

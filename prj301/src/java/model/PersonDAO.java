@@ -82,6 +82,33 @@ public class PersonDAO extends MyDAO {
 
     }
 
+    public List<Person> searchByName(String txtSearch) {
+        List<Person> list = new ArrayList<>();
+        xSql = "select * from person where [name] like '%" + txtSearch + "%'";
+        int xId;
+        String xName;
+        Date xDob;
+        String xAddress;
+        Person x;
+        try {
+            ps = con.prepareStatement(xSql);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                xId = rs.getInt("id");
+                xName = rs.getString("name");
+                xDob = rs.getDate("dob");
+                xAddress = rs.getString("address");
+                x = new Person(xId, xName, xDob, xAddress);
+                list.add(x);
+            }
+            rs.close();
+            ps.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return (list);
+    }
+
     public void add(String name, Date dob, String address) {
         xSql = "insert into person ([name],[dob],[address]) values (?,?,?)";
         java.sql.Date xDob = (java.sql.Date) dob;

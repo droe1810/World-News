@@ -25,6 +25,13 @@
                         <div class="col-sm-6">
                             <h2>Manage <b>Writer</b></h2>
                             <a href="add_writer.jsp"  class="btn btn-success">Add Writer</a>
+                            <p>
+                                <form action="searchperson" method="post"  >
+                                    <div class="menu_box_2">
+                                        <input name="txt" class="form_1" type="text" value="${txtSearch}" placeholder="Search...">
+                                        <input type="submit" value="Ok">
+                                    </div>
+                                </form>                             
                         </div>
                     </div>
                 </div>
