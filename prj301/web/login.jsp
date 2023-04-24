@@ -49,9 +49,11 @@
         <div class="form-group">
             <button type="submit" class="btn btn-primary btn-block">Log in</button>
         </div>
+        <div class="form-group">
+            <a class="btn btn-success" href="create_account.jsp">Create an Account</a>
+        </div>
         <div class="clearfix">
             <!--<label class="float-left form-check-label"><input type="checkbox"> Remember me</label>-->
-            <a href="#" class="float-right">Forgot Password?</a>
             <a href="home" class="float-left">Back to homepage</a>
         </div>        
     </form>

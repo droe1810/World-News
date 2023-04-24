@@ -76,6 +76,10 @@
         <servlet-name>SearchPersonServlet</servlet-name>
         <servlet-class>controller.SearchPersonServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CreateAccountServlet</servlet-name>
+        <servlet-class>controller.CreateAccountServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeServlet</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -154,6 +158,10 @@
     <servlet-mapping>
         <servlet-name>SearchPersonServlet</servlet-name>
         <url-pattern>/searchperson</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CreateAccountServlet</servlet-name>
+        <url-pattern>/createaccount</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

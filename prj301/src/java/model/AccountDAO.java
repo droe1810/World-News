@@ -32,7 +32,7 @@ public class AccountDAO extends MyDAO {
 
     public List<Account> getAllWriter() {
         List<Account> list = new ArrayList<>();
-        xSql = "select * from Account where isAdmin = 0";
+        xSql = "select * from Account where isWriter = 1";
         try {
             String xUser, xPass;
             int xId, xIsWriter, xIsAdmin;
@@ -91,5 +91,39 @@ public class AccountDAO extends MyDAO {
         }
     }
 
-    
+    public void addReader(String user, String pass) {
+        xSql = "insert into Account ([user],pass,isWriter,isAdmin) values (?,?,0,0)";
+        try {
+            ps = con.prepareStatement(xSql);
+            ps.setString(1, user);
+            ps.setString(2, pass);
+            ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public boolean checkExits(String user) {
+        List<String> list = new ArrayList<>();
+        xSql = "select user from Account";
+        try {
+            String xUser;
+            ps = con.prepareStatement(xSql);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                xUser = rs.getString("user");
+                list.add(xUser);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        for (int i = 0; i < list.size(); i++) {
+            if (user.equals(list.get(i))) {
+                return true;
+            } 
+        }
+        return false;
+    }
+
 }

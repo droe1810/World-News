@@ -68,7 +68,7 @@
                                 <a class="li_1" href="home"><i class="fa fa-home"></i>Home</a>
                             </li>
 
-                            <c:if test="${sessionScope.acc != null}">
+                            <c:if test="${sessionScope.acc.isWriter == 1}">
                                 <li>
                                     <a class="li_1" href="getcategory">Post New</a>
                                 </li>
@@ -87,7 +87,7 @@
                             </c:if>
 
 
-                            <c:if test="${sessionScope.acc != null}">
+                            <c:if test="${sessionScope.acc.isWriter == 1}">
                                 <li>
                                     <a class="li_1" href="viewprofile">Profile</a>
                                 </li>

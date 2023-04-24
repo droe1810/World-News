@@ -38,9 +38,6 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-6">
-                            <a href="#"   > </a>
-                        </div>
                     </div>
                 </div>
                 <table class="table table-striped table-hover">
@@ -62,24 +59,16 @@
                                 </td>
                                 <td>
                                     <a href="detail?id=${o.id}"  class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="detail">!</i></a>
-
                                     <a href="loadnew?id=${o.id}"  class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
                                     <a href="deletenew?id=${o.id}" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                                 </td>
                             </tr>
-                        </c:forEach>
+                        </c:forEach>                  
                     </tbody>
-                    
                 </table>
-                                                                        <a href="home"><button type="button" class="btn btn-primary">Back to home</button>
-
+                <a href="home"><button type="button" class="btn btn-primary">Back to home</button>
             </div>
-
         </div>
-        <!-- Edit Modal HTML -->
-
-
-
         <script src="js/manager.js" type="text/javascript"></script>
     </body>
 </html>
