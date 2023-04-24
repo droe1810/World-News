@@ -23,11 +23,13 @@ public class HomeServlet extends HttpServlet {
         CategoryDAO cd = new CategoryDAO();
         
         List<New> listN = nd.getNewByCID(id);
+        List<New> last = nd.get3LastNew();
         List<Category> listC = cd.getAllCategory();
         Category c = cd.getCategoryByID(sId);
         
         request.setAttribute("listN", listN);
         request.setAttribute("listC", listC);
+        request.setAttribute("last", last);
         request.setAttribute("c", c);
         
         request.getRequestDispatcher("home.jsp").forward(request, response);

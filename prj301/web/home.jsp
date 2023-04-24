@@ -103,11 +103,11 @@
         <section id="center">
             <div class="container">
                 <div class="row">
+                    <h3>${c.cname} News</h3>
                     <div class="col-sm-12 center_main">
                         <div class="col-sm-2">
                             <div class="center_1">
                                 <ul>
-                                    <div><h3>${c.cname} News</h3></div>
                                     <c:forEach items="${listC}" var="o">                                   
                                         <li><a href="home?cid=${o.cid}">${o.cname}</a></li>
                                         </c:forEach>
@@ -182,32 +182,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <h5><a href="#">Lastest News</a></h5>           
 
-                                <div class="col-sm-12 center_3_link">
-                                    <a href="#"><img class="img-circle" src="img/26.jpg" width="100%"></a>
-                                    <p><a href="#">Good Evening World</a></p>
-                                    <h4><a href="#"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</a></h4>
-                                </div>
-                                <div class="col-sm-12 center_3_link">
-                                    <a href="#"><img class="img-circle" src="img/27.jpg" width="100%"></a>
-                                    <p><a href="#">World Hub</a></p>
-                                    <h4><a href="#"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</a></h4>
-                                </div>
-                                <div class="col-sm-12 center_3_image">
-                                    <div class="media">
-                                        <a href="#">
-                                            <img class="media-object dp " src="img/28.jpg" width="100%">
-                                        </a>
+                                <h5><a href="#">Lastest News</a></h5>
+                                <c:forEach items="${last}" var="o">
+                                    <div class="col-sm-12 center_3_link">
+                                        <a href="detail?id=${o.id}"><img class="media-object dp" src="${o.image}" width="100%"></a>
+                                        <h4><a href="detail?id=${o.id}"> ${o.name} </a></h4>
                                     </div>
-                                </div>
-                                <div class="col-sm-12 center_3_image">
-                                    <div class="media">
-                                        <a href="#">
-                                            <img class="media-object dp " src="img/29.jpg" width="100%">
-                                        </a>
-                                    </div>
-                                </div>
+                                </c:forEach>
+
 
                             </div>
                         </div>
